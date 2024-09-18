@@ -1,0 +1,10 @@
+[INFO 1726665604.76927] Initializing DiscordHandler
+[INFO 1726665604.76927] Connecting to Discord's Gateway
+[INFO 1726665604.9591043] Received HELLO event.
+[INFO 1726665604.9601843] [Connect To Gateway] Successfully connected to Discord's Gateway
+[INFO 1726665604.9601843] [HBM] Heartbeat loop activated.
+[INFO 1726665604.9601843] [Identify] Sent Identify Packet
+[INFO 1726665604.9611866] [Identify] Receiving READY event
+[INFO 1726665605.0823812] Heartbeat received
+[INFO 1726665605.1842985] Received READY event.
+[INFO 1726665605.185304] Sucessfully parsed READY event
