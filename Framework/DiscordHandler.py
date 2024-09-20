@@ -1,3 +1,5 @@
+import threading
+
 import requests
 import websocket
 import json
@@ -23,7 +25,6 @@ class DiscordHandler:
         self.heartbeatIntervalMilliseconds: int = 0
         self.sessionID = ""
         self.resumeURL = ""
-        self.commands: list[SlashCommand] = []
 
 
 
@@ -38,24 +39,39 @@ class DiscordHandler:
         # Upload Commands.
         self._setupCommands()
 
+        threading.Thread(self._autohandler())
+
+
         # Start autohandler loop.
+    def _handleCommand(self, response: dict):
+        command_data: dict = response.get("d")
+        command_name: str = command_data.get('data').get("name")
+        command_func: SlashCommand = self._bot.get_command(command_name)
+
+        if command_func:
+            self._logger.print(f"Executing command {command_name}")
+            command_func.on_use(command_data.get("token"), command_data.get("id"), self._bot.getToken())
+        else:
+            self._logger.print(f"Command {command_name} not found")
+
+
+
     def _autohandler(self):
         while True:
-            packet = self.receiveResponse()
+            packet: dict = self.receiveResponse()
             # try to auto handle response
             # if handler couldn't handle
+            self.handleResponse(packet)
 
     # loads commands and sends them off to discord
     def _setupCommands(self):
         url: str = f"https://discord.com/api/v10/applications/{self._bot.appid}/commands"
         headers: dict = {"Authorization": f"Bot {self._bot.getToken()}"}
         command: SlashCommand
-        for command in self._bot.commands:
+        name: str
+        for name, command in self._bot.commands.items():
             r = requests.post(url, headers=headers, json=command.setupPacket)
             self._logger.print(f"Loaded Command {command.name} with status: {r.status_code}\n {r.json()}")
-            if r.status_code == 201:
-                self.commands.append(command)
-
     # function handles identifying and receiving Ready event.
     def _identify(self):
         self._logger.print("[Identify] Sent Identify Packet")
@@ -79,8 +95,9 @@ class DiscordHandler:
 
     # Returns TRUE if response was handled automatically
     # Returns FALSE if program couldn't handle response.
-    def handleResponse(self) -> [bool, dict]:
-        response: dict = self.receiveResponse()
+    def handleResponse(self, response: dict = None) -> [bool, dict]:
+        if response is None:
+            response: dict = self.receiveResponse()
         match response.get('op', -1):
             case -1:
                 # program occurred error so return false
@@ -107,8 +124,17 @@ class DiscordHandler:
                     self._logger.print("chuj mniue jasny strzeli\n" + str(e))
                     breakpoint()
                     return [False, response]
+            case 11:
+                self._logger.print("Heartbeat received")
+                return [True, {}]
+        if response.get("op") != 0:
+            self._logger.print("Unhandled packet!", logType=LogType.ERROR)
+            self._logger.print("PACKET: " + str(response))
+            raise NotImplementedError()
 
-            case 0:
+
+        match response.get("t"):
+            case "READY":
                 self._logger.print("Received READY event.")
                 # Ready event
                 try:
@@ -120,18 +146,13 @@ class DiscordHandler:
                     return [False, response]
                 self._logger.print("Sucessfully parsed READY event")
                 return [True, {}]
-            case 11:
-                self._logger.print("Heartbeat received")
-
-        match response.get("t", "nula"):
-            case "nula":
-                self._logger.print("Error occurred while trying to parse type event response!", logType=LogType.ERROR)
-            ### TODO: write command handler!
             case "INTERACTION_CREATE":
+                self._logger.print("Received INTERACTION_CREATE event.")
                 self._handleCommand(response)
+        return [True, {}]
 
-    def _handleCommand(self, response: dict):
-        ...
+
+
     def receiveResponse(self) -> dict:
         response = None
         try:
@@ -142,6 +163,7 @@ class DiscordHandler:
             self._websocket.close()
             breakpoint()
         self._lastSequence = json.loads(response)['s']
+        self._logger.print(json.loads(response), logType=LogType.DEBUG)
         return json.loads(response)
 
 

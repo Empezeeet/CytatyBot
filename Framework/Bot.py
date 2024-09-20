@@ -2,13 +2,19 @@ from Framework.Commands import SlashCommand
 
 
 class Bot:
-    def __init__(self, token, appid, commands: list[SlashCommand] = None):
+    def __init__(self, token, appid, commands: dict[str, SlashCommand] = None):
         self._token = token
         self.appid = appid
         if commands is None:
-            self.commands = []
+            self.commands = {}
         else:
             self.commands = commands
 
     def getToken(self) -> str:
         return self._token
+    def get_command(self, name: str):
+        command = self.commands.get(name, None)
+        if command is None:
+            raise TypeError
+        else:
+            return command

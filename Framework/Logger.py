@@ -1,6 +1,6 @@
 import time
 from enum import Enum
-
+import datetime
 class LogType(Enum):
     DEBUG = "DEBUG"
     INFO = "INFO"
@@ -13,7 +13,7 @@ class LogType(Enum):
 class Logger:
     def __init__(self, name: str, defaultLogType: LogType = LogType.INFO):
         self._defaultLogType = defaultLogType
-        self._LOG_NAME = f"{name}_{time.time()}.botlog"
+        self._LOG_NAME = f"{name}_{ time.time() }.botlog"
         print(f"Logfile location: {self._LOG_NAME}")
         open(self._LOG_NAME, "w").close()
 
@@ -21,7 +21,7 @@ class Logger:
         if logType is None: logType = self._defaultLogType
         log = f"[{logType.value} {time.time()}] {content}"
         print(log)
-        with open(self._LOG_NAME, "a") as f:
+        with open(self._LOG_NAME, "a", encoding="utf-8") as f:
             f.write(log)
             f.write("\n")
 

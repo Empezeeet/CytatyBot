@@ -34,7 +34,7 @@ class PacketFactory:
                 "presence": {
                     "since":time.time(),
                     "activities": [{
-                        "name": f"Testing {time.time()}",
+                        "name": f"Cytatów. {time.time()}",
                         "type":2,
                         "url": "https://github.com/"
 
