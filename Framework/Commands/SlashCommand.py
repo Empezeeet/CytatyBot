@@ -8,12 +8,12 @@ class SlashCommand:
         self.name = name
         self.description = description
         self.setupPacket = {
-            "name":name,
+            "name":name.lower(),
             "type":1,
             "description":description,
             "options": options
         }
-
+    @staticmethod
     @abstractmethod
-    def on_use(self):
+    def on_use(interactionToken: str, interactionID: str, applicationToken: str):
         pass
