@@ -34,9 +34,9 @@ class PacketFactory:
                 "presence": {
                     "since":time.time(),
                     "activities": [{
-                        "name": f"Cytatów {time.time()}",
+                        "name": f"Cytatów",
                         "type":2,
-                        "url": "https://github.com/"
+                        "url": "https://github.com/empezeeet"
 
                     }],
                     "status":"online",
