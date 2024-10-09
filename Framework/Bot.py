@@ -2,9 +2,10 @@ from Framework.Commands import SlashCommand
 
 
 class Bot:
-    def __init__(self, token, appid, commands: dict[str, SlashCommand] = None):
+    def __init__(self, token, appid, activityName: str,commands: dict[str, SlashCommand] = None):
         self._token = token
         self.appid = appid
+        self.activityName = activityName
         if commands is None:
             self.commands = {}
         else:

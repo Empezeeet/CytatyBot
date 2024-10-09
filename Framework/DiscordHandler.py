@@ -75,7 +75,7 @@ class DiscordHandler:
     # function handles identifying and receiving Ready event.
     def _identify(self):
         self._logger.print("[Identify] Sent Identify Packet")
-        self._websocket.send(json.dumps(PacketFactory.identifyPacket(self._bot.getToken(), self._lastSequence)))
+        self._websocket.send(json.dumps(PacketFactory.identifyPacket(self._bot.getToken(), self._lastSequence, self._bot.activityName)))
         # Receive READY event
         self._logger.print("[Identify] Receiving READY event")
         self.handleResponse()
@@ -121,7 +121,7 @@ class DiscordHandler:
                     self.heartbeatIntervalMilliseconds = response.get("d").get("heartbeat_interval")
                     return [True, {}]
                 except AttributeError as e:
-                    self._logger.print("chuj mniue jasny strzeli\n" + str(e))
+                    self._logger.print("mad error! report to github with .botlog file\n" + str(e))
                     breakpoint()
                     return [False, response]
             case 11:
@@ -141,7 +141,7 @@ class DiscordHandler:
                     self.sessionID = response.get("d").get("session_id")
                     self.resumeURL = response.get("d").get("resume_url")
                 except AttributeError as e:
-                    self._logger.print("AT READY: chuj mniue jasny strzeli\n" + str(e))
+                    self._logger.print("mad error! report to github with .botlog file\n" + str(e))
                     breakpoint()
                     return [False, response]
                 self._logger.print("Sucessfully parsed READY event")
@@ -161,6 +161,7 @@ class DiscordHandler:
             self._logger.print("[Gateway] Connection closed")
             self._logger.print(f"An error occurred!\n {e}")
             self._websocket.close()
+            # TODO: handle disconnect.
             breakpoint()
         self._lastSequence = json.loads(response)['s']
         self._logger.print(json.loads(response), logType=LogType.DEBUG)

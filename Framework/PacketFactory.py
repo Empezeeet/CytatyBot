@@ -20,7 +20,7 @@ class PacketFactory:
             }
         }
     @staticmethod
-    def identifyPacket(token: str, last_sequence: str) -> dict:
+    def identifyPacket(token: str, last_sequence: str, activityName: str) -> dict:
         return {
             "op":2,
             "d": {
@@ -34,7 +34,7 @@ class PacketFactory:
                 "presence": {
                     "since":time.time(),
                     "activities": [{
-                        "name": f"Cytatów",
+                        "name": activityName,
                         "type":2,
                         "url": "https://github.com/empezeeet"
 
