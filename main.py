@@ -1,5 +1,5 @@
-from Framework import DiscordHandler as discord
-from Framework import Bot as app
+from disintegration import DiscordHandler as discord
+from disintegration import Bot as app
 import PingCommand
 import LeaderboardCommand
 from GameCommand import GameCommand

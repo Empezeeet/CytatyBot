@@ -2,7 +2,7 @@ import requests
 import json
 import re
 
-from Framework.Commands import SlashCommand
+from disintegration.Commands import SlashCommand
 
 class LeaderboardCommand(SlashCommand.SlashCommand):
     def __init__(self):

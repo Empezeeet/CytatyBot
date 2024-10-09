@@ -1,7 +1,7 @@
 import json
 import time
 
-from Framework.Commands import SlashCommand
+from disintegration.Commands import SlashCommand
 import requests
 import random
 import re

@@ -1,5 +1,5 @@
 import requests
-from Framework.Commands import SlashCommand
+from disintegration.Commands import SlashCommand
 
 class PingCommand(SlashCommand.SlashCommand):
     def __init__(self):
