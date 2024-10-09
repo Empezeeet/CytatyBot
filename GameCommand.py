@@ -13,7 +13,7 @@ class GameCommand(SlashCommand.SlashCommand):
         callbackURL = f"https://discord.com/api/v10/interactions/{interactionID}/{interactionToken}/callback"
         channelMessages = requests.get("https://discord.com/api/v10/channels/1012458745248358461/messages?limit=100",
                                        headers={"Authorization": f"Bot {token}"})
-
+        # TODO: bot gets only 100 last messages!
         channelMessages = json.loads(channelMessages.text)
         message: str = ""
         while True:
