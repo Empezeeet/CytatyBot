@@ -1,0 +1,243 @@
+[INFO 1728459312.3191018] Initializing DiscordHandler
+[INFO 1728459312.3191018] Connecting to Discord's Gateway
+[DEBUG 1728459312.5223234] {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-drzw",{"micros":0.0}]']}}
+[INFO 1728459312.5233362] Received HELLO event.
+[INFO 1728459312.5233362] [Connect To Gateway] Successfully connected to Discord's Gateway
+[INFO 1728459312.5243347] [HBM] Heartbeat loop activated.
+[INFO 1728459312.5243347] [Identify] Sent Identify Packet
+[INFO 1728459312.5243347] [Identify] Receiving READY event
+[DEBUG 1728459312.6510653] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459312.6520662] Heartbeat received
+[INFO 1728459312.861551] Loaded Command leaderboard with status: 200
+ {'id': '1286734815823003730', 'application_id': '1286134427851817032', 'version': '1286758853303734273', 'default_member_permissions': None, 'type': 1, 'name': 'leaderboard', 'name_localizations': None, 'description': 'Pokazuje statystyki cytatów', 'description_localizations': None, 'dm_permission': True, 'contexts': None, 'integration_types': [0], 'nsfw': False}
+[INFO 1728459313.0938385] Loaded Command ping with status: 200
+ {'id': '1286136158291628052', 'application_id': '1286134427851817032', 'version': '1286136158291628053', 'default_member_permissions': None, 'type': 1, 'name': 'ping', 'name_localizations': None, 'description': 'Responds wih Pong!', 'description_localizations': None, 'dm_permission': True, 'contexts': None, 'integration_types': [0], 'nsfw': False}
+[INFO 1728459313.295774] Loaded Command graj with status: 200
+ {'id': '1286804027576946759', 'application_id': '1286134427851817032', 'version': '1286804027576946760', 'default_member_permissions': None, 'type': 1, 'name': 'graj', 'name_localizations': None, 'description': 'Rozpocznij grę w cytaty!', 'description_localizations': None, 'dm_permission': True, 'contexts': None, 'integration_types': [0], 'nsfw': False}
+[DEBUG 1728459313.2967727] {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'CytatyBot', 'mfa_enabled': True, 'id': '1286134427851817032', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '4158', 'clan': None, 'bot': True, 'avatar': '25bf4421fe170ac34d31976f21d97d27'}, 'session_type': 'normal', 'session_id': 'f38917a71a22af22e796ab51b6a8118e', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1012458697995337748'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['warsaw', 'frankfurt', 'frankfurt-two', 'stockholm', 'rotterdam'], 'auth': {}, 'application': {'id': '1286134427851817032', 'flags': 27787264}, '_trace': ['["gateway-prd-us-east1-c-drzw",{"micros":105574,"calls":["id_created",{"micros":553,"calls":[]},"session_lookup_time",{"micros":672,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-1-203",{"micros":103956,"calls":["start_session",{"micros":50386,"calls":["discord-api-rpc-5fcdfd49d-nn5vq",{"micros":46182,"calls":["get_user",{"micros":5684},"get_guilds",{"micros":4580},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":100,"calls":[]},"presence_started",{"micros":316,"calls":[]},"guilds_started",{"micros":67,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":53058,"calls":[]},"connect_finished",{"micros":53068,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]']}}
+[INFO 1728459313.2967727] Received READY event.
+[INFO 1728459313.297774] Sucessfully parsed READY event
+[DEBUG 1728459313.2998044] {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'splash': 'c9a76f6a4164fb461d538a9ce55994c5', 'preferred_locale': 'pl', 'features': ['ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY', 'CHANNEL_ICON_EMOJIS_GENERATED', 'ANIMATED_ICON', 'SOUNDBOARD', 'AUTO_MODERATION', 'THREE_DAY_THREAD_ARCHIVE', 'GUESTS_ENABLED', 'INVITE_SPLASH'], 'hub_type': None, 'presences': [], 'owner_id': '484252135131971584', 'embedded_activities': [], 'home_header': None, 'premium_tier': 1, 'max_stage_video_channel_users': 50, 'stage_instances': [], 'nsfw_level': 0, 'id': '1012458697995337748', 'roles': [{'version': 1683103158715, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '2217687140126272', 'permissions': 104189504, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1012458697995337748', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1725620441978, 'unicode_emoji': None, 'tags': {'premium_subscriber': None}, 'position': 7, 'permissions_new': '111023024885449', 'permissions': 267767497, 'name': 'nie mam co z kasą robić', 'mentionable': False, 'managed': True, 'id': '1018174802567102568', 'icon': None, 'hoist': False, 'flags': 0, 'color': 16023551}, {'version': 1726856280668, 'unicode_emoji': None, 'tags': {}, 'position': 3, 'permissions_new': '5400975232576', 'permissions': 53857856, 'name': 'User', 'mentionable': False, 'managed': False, 'id': '1051568158739267644', 'icon': None, 'hoist': False, 'flags': 0, 'color': 969215}, {'version': 1728071645069, 'unicode_emoji': None, 'tags': {}, 'position': 4, 'permissions_new': '420013441285843', 'permissions': 2146959059, 'name': 'Dyktator', 'mentionable': False, 'managed': False, 'id': '1209184363854696488', 'icon': None, 'hoist': True, 'flags': 0, 'color': 15158332}, {'version': 1726856280665, 'unicode_emoji': None, 'tags': {}, 'position': 2, 'permissions_new': '0', 'permissions': 0, 'name': 't', 'mentionable': False, 'managed': False, 'id': '1272229698163970161', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1726856280676, 'unicode_emoji': None, 'tags': {}, 'position': 5, 'permissions_new': '8797770743993', 'permissions': 1677721785, 'name': 'pierdol się', 'mentionable': False, 'managed': False, 'id': '1281569009673965680', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1726856280661, 'unicode_emoji': None, 'tags': {}, 'position': 1, 'permissions_new': '0', 'permissions': 0, 'name': 'nowa rola', 'mentionable': False, 'managed': False, 'id': '1281569729420460033', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1727129743994, 'unicode_emoji': None, 'tags': {'bot_id': '1286134427851817032'}, 'position': 6, 'permissions_new': '67584', 'permissions': 67584, 'name': 'CytatyBot', 'mentionable': False, 'managed': True, 'id': '1286135979392106561', 'icon': None, 'hoist': True, 'flags': 0, 'color': 15277667}, {'version': 1728277930939, 'unicode_emoji': None, 'tags': {}, 'position': 1, 'permissions_new': '0', 'permissions': 0, 'name': 'Deadlock', 'mentionable': False, 'managed': False, 'id': '1292716069823184947', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1728278325704, 'unicode_emoji': None, 'tags': {}, 'position': 1, 'permissions_new': '0', 'permissions': 0, 'name': 'creative', 'mentionable': False, 'managed': False, 'id': '1292717726229331988', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'emojis': [{'version': 1664551331611, 'roles': [], 'require_colons': True, 'name': 'unkno11wn', 'managed': False, 'id': '1025427348918640712', 'available': True, 'animated': False}, {'version': 1664551345557, 'roles': [], 'require_colons': True, 'name': 'walter', 'managed': False, 'id': '1025427354266386552', 'available': True, 'animated': False}, {'version': 1664551342724, 'roles': [], 'require_colons': True, 'name': 'waltuh', 'managed': False, 'id': '1025427356065747065', 'available': True, 'animated': False}, {'version': 1670441130884, 'roles': [], 'require_colons': True, 'name': 'Snowsgiving22_AnimatedEmojis_bre', 'managed': False, 'id': '1050130957350473790', 'available': True, 'animated': True}, {'version': 1670441131504, 'roles': [], 'require_colons': True, 'name': 'Snowsgiving22_AnimatedEmojis_mal', 'managed': False, 'id': '1050130960320049282', 'available': True, 'animated': True}, {'version': 1670441132085, 'roles': [], 'require_colons': True, 'name': 'Snowsgiving22_AnimatedEmojis_Sno', 'managed': False, 'id': '1050130962740170833', 'available': True, 'animated': True}, {'version': 1680969950793, 'roles': [], 'require_colons': True, 'name': '9k', 'managed': False, 'id': '1094292029082706042', 'available': True, 'animated': False}, {'version': 1710442336235, 'roles': [], 'require_colons': True, 'name': 'jebalecha', 'managed': False, 'id': '1217907957379891292', 'available': True, 'animated': False}], 'system_channel_flags': 12, 'premium_subscription_count': 2, 'system_channel_id': None, 'stickers': [{'version': 1670439447228, 'type': 2, 'tags': 'grinning', 'name': 'Ski', 'id': '1050123896243888168', 'guild_id': '1012458697995337748', 'format_type': 2, 'description': None, 'available': True, 'asset': ''}, {'version': 1670439594800, 'type': 2, 'tags': 'disappointed', 'name': 'Ski ', 'id': '1050124515214110844', 'guild_id': '1012458697995337748', 'format_type': 2, 'description': 'Jasne', 'available': True, 'asset': ''}, {'version': 1670441067110, 'type': 2, 'tags': 'nerd', 'name': 'Sled Dark', 'id': '1050130690508861450', 'guild_id': '1012458697995337748', 'format_type': 2, 'description': None, 'available': True, 'asset': ''}, {'version': 1670441079457, 'type': 2, 'tags': 'frowning2', 'name': 'Sled Light', 'id': '1050130742316912660', 'guild_id': '1012458697995337748', 'format_type': 2, 'description': None, 'available': True, 'asset': ''}, {'version': 1670441106161, 'type': 2, 'tags': 'grinning', 'name': 'samwieszkto', 'id': '1050130854313197699', 'guild_id': '1012458697995337748', 'format_type': 2, 'description': 'Filename: Snowsgiving22_Stickers_Snowangel', 'available': True, 'asset': ''}], 'rules_channel_id': None, 'activity_instances': [], 'name': 'The Boys', 'voice_states': [], 'guild_scheduled_events': [{'status': 1, 'sku_ids': [], 'scheduled_start_time': '2025-08-27T18:00:00+00:00', 'scheduled_end_time': None, 'recurrence_rule': {'start': '2025-08-27T18:00:00+00:00', 'interval': 1, 'frequency': 0, 'end': None, 'count': None, 'by_year_day': None, 'by_weekday': None, 'by_n_weekday': None, 'by_month_day': [27], 'by_month': [8]}, 'privacy_level': 2, 'name': 'Premiera Slandera', 'image': 'a351a760ae2bbbc8d9f71369d4c3eb1c', 'id': '1278053505558646865', 'guild_scheduled_event_exceptions': [], 'guild_id': '1012458697995337748', 'entity_type': 2, 'entity_metadata': None, 'entity_id': None, 'description': 'Reżyseria: Emil M.', 'creator_id': '484252135131971584', 'channel_id': '1208172715664474194', 'auto_start': False}], 'afk_channel_id': None, 'safety_alerts_channel_id': None, 'region': 'deprecated', 'threads': [], 'max_video_channel_users': 25, 'banner': None, 'description': None, 'application_command_counts': {}, 'member_count': 20, 'explicit_content_filter': 2, 'large': False, 'discovery_splash': None, 'afk_timeout': 300, 'unavailable': False, 'channels': [{'version': 1728426746713, 'type': 4, 'position': 3, 'permission_overwrites': [], 'parent_id': None, 'name': 'Voice', 'id': '1012458699710791704', 'flags': 0}, {'voice_background_display': None, 'video_quality_mode': 1, 'version': 1728426441419, 'user_limit': 99, 'type': 2, 'theme_color': None, 'status': None, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [{'type': 'role', 'id': '1012458697995337748', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '1293338108842086464', 'nsfw': False, 'name': 'ogólny', 'last_message_id': '1289599453442871356', 'id': '1012458699710791706', 'icon_emoji': {'name': '🌐', 'id': None}, 'flags': 0, 'bitrate': 42000}, {'version': 1728426639263, 'type': 0, 'topic': 'Top pojeb:*** Emil***', 'theme_color': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [{'type': 'role', 'id': '1051568158739267644', 'deny_new': '0', 'deny': 0, 'allow_new': '3072', 'allow': 3072}, {'type': 'role', 'id': '1012458697995337748', 'deny_new': '2147486720', 'deny': 3072, 'allow_new': '0', 'allow': 0}], 'parent_id': '1293339542962831371', 'nsfw': True, 'name': 'cytaty', 'last_message_id': '1293319779641462805', 'id': '1012458745248358461', 'icon_emoji': {'name': '💬', 'id': None}, 'flags': 0, 'default_thread_rate_limit_per_user': 0}, {'version': 1728426639276, 'type': 0, 'topic': None, 'theme_color': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [{'type': 'role', 'id': '1051568158739267644', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '1012458697995337748', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}], 'parent_id': '1293339542962831371', 'nsfw': True, 'name': 'memy', 'last_message_id': '1293197511422513173', 'id': '1012459806369521876', 'icon_emoji': {'name': '🤣', 'id': None}, 'flags': 0, 'default_thread_rate_limit_per_user': 0, 'default_auto_archive_duration': 10080}, {'version': 1728426584212, 'type': 0, 'topic': None, 'theme_color': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [{'type': 'role', 'id': '1272229698163970161', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '1012458697995337748', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '1293339542962831371', 'nsfw': False, 'name': 'ogólny', 'last_pin_timestamp': '2024-08-27T18:02:19+00:00', 'last_message_id': '1293474271812648990', 'id': '1013135569666179172', 'icon_emoji': {'name': '🌐', 'id': None}, 'flags': 0, 'default_thread_rate_limit_per_user': 0}, {'voice_background_display': None, 'video_quality_mode': 2, 'version': 1728426266581, 'user_limit': 2, 'type': 2, 'theme_color': None, 'status': None, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'parent_id': '1012458699710791704', 'nsfw': False, 'name': '| max 2 |', 'last_message_id': None, 'id': '1057785310492246146', 'icon_emoji': {'name': '2️⃣', 'id': None}, 'flags': 0, 'bitrate': 50000}, {'version': 1728426578109, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [{'type': 'role', 'id': '1012458697995337748', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '1292717726229331988', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '1293336803507441756', 'nsfw': False, 'name': 'creative', 'last_message_id': '1289684943898939443', 'id': '1198071994130898985', 'flags': 0}, {'voice_background_display': None, 'version': 1728426688699, 'user_limit': 99, 'type': 2, 'theme_color': None, 'status': None, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1293338108842086464', 'nsfw': False, 'name': 'ogólny-FHD', 'last_message_id': '1286728834418344008', 'id': '1208172715664474194', 'icon_emoji': {'name': '🌐', 'id': None}, 'flags': 0, 'bitrate': 65000}, {'version': 1728426266570, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [{'type': 'role', 'id': '1012458697995337748', 'deny_new': '1048576', 'deny': 1048576, 'allow_new': '1024', 'allow': 1024}, {'type': 'role', 'id': '1018174802567102568', 'deny_new': '0', 'deny': 0, 'allow_new': '1049600', 'allow': 1049600}], 'parent_id': '1012458699710791704', 'nsfw': False, 'name': 'tylko dla bogatych', 'last_message_id': None, 'id': '1279109132804427857', 'flags': 0, 'bitrate': 128000}, {'version': 1728426578146, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [{'type': 'role', 'id': '1012458697995337748', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'member', 'id': '345943510647570432', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': '1293336803507441756', 'nsfw': False, 'name': 'clips', 'last_message_id': '1279592781983125555', 'id': '1279578582477443104', 'flags': 0}, {'version': 1728426374845, 'type': 4, 'position': 2, 'permission_overwrites': [{'type': 'role', 'id': '1012458697995337748', 'deny_new': '1024', 'deny': 1024, 'allow_new': '0', 'allow': 0}, {'type': 'role', 'id': '1292717726229331988', 'deny_new': '0', 'deny': 0, 'allow_new': '1024', 'allow': 1024}], 'parent_id': None, 'name': 'Creative', 'id': '1293336803507441756', 'flags': 0}, {'version': 1728426237693, 'type': 4, 'position': 0, 'permission_overwrites': [], 'parent_id': None, 'name': 'ogolne', 'id': '1293338108842086464', 'flags': 0}, {'version': 1728426296424, 'user_limit': 2, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 4, 'permission_overwrites': [], 'parent_id': '1012458699710791704', 'nsfw': False, 'name': '| max 2 |', 'last_message_id': None, 'id': '1293338369782190195', 'flags': 0, 'bitrate': 50000}, {'version': 1728426784959, 'type': 4, 'position': 1, 'permission_overwrites': [], 'parent_id': None, 'name': '[    Tekstowe     ]', 'id': '1293339542962831371', 'flags': 0}], 'max_members': 500000, 'vanity_url_code': None, 'mfa_level': 0, 'joined_at': '2024-09-19T01:25:12.855000+00:00', 'icon': 'b2939669bd2b1071149424d1f9a3e220', 'inventory_settings': None, 'application_id': None, 'premium_progress_bar_enabled': True, 'clan': None, 'default_message_notifications': 1, 'nsfw': False, 'soundboard_sounds': [{'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1096103950761070643', 'name': 'Emotional Damage', 'guild_id': '1012458697995337748', 'emoji_name': None, 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1096105179566321824', 'name': 'TEpe chuje', 'guild_id': '1012458697995337748', 'emoji_name': '🫱🏻\u200d🫲🏿', 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1096105567946293478', 'name': 'Rafon Dzrwi', 'guild_id': '1012458697995337748', 'emoji_name': None, 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1096107859416207400', 'name': 'And his name is', 'guild_id': '1012458697995337748', 'emoji_name': None, 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1105476127184662610', 'name': 'O JA PIER DO LE', 'guild_id': '1012458697995337748', 'emoji_name': '😮', 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1105476567381069914', 'name': 'O KU RWA', 'guild_id': '1012458697995337748', 'emoji_name': '😲', 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1105476943509463213', 'name': 'ZAJEBANE', 'guild_id': '1012458697995337748', 'emoji_name': '😬', 'emoji_id': None, 'available': True}, {'volume': 1.0, 'user_id': '484252135131971584', 'sound_id': '1120424628528091186', 'name': 'r u c h a n i e . ', 'guild_id': '1012458697995337748', 'emoji_name': '🥵', 'emoji_id': None, 'available': True}], 'latest_onboarding_question_id': '1105503436000198711', 'lazy': True, 'version': 1728426517502, 'verification_level': 2, 'incidents_data': None, 'public_updates_channel_id': None, 'members': [{'user': {'username': 'CytatyBot', 'public_flags': 0, 'id': '1286134427851817032', 'global_name': None, 'display_name': None, 'discriminator': '4158', 'clan': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': '25bf4421fe170ac34d31976f21d97d27'}, 'roles': ['1286135979392106561', '1051568158739267644'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2024-09-19T01:25:12.855000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}]}}
+[INFO 1728459353.7752316] Sent heartbeat.
+[DEBUG 1728459353.8988426] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459353.8998427] Heartbeat received
+[INFO 1728459395.025998] Sent heartbeat.
+[DEBUG 1728459395.1475165] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459395.1475165] Heartbeat received
+[INFO 1728459436.276739] Sent heartbeat.
+[DEBUG 1728459436.3963] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459436.3973145] Heartbeat received
+[INFO 1728459477.527768] Sent heartbeat.
+[DEBUG 1728459477.6470168] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459477.6470168] Heartbeat received
+[INFO 1728459518.7785046] Sent heartbeat.
+[DEBUG 1728459518.8995895] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459518.9005907] Heartbeat received
+[INFO 1728459560.0294385] Sent heartbeat.
+[DEBUG 1728459560.1496036] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459560.1496036] Heartbeat received
+[INFO 1728459601.2801154] Sent heartbeat.
+[DEBUG 1728459601.4066834] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459601.407688] Heartbeat received
+[INFO 1728459642.5307462] Sent heartbeat.
+[DEBUG 1728459642.6502814] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459642.6502814] Heartbeat received
+[INFO 1728459683.7816179] Sent heartbeat.
+[DEBUG 1728459683.90743] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459683.90743] Heartbeat received
+[INFO 1728459725.0323968] Sent heartbeat.
+[DEBUG 1728459725.1545572] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459725.1545572] Heartbeat received
+[INFO 1728459766.2828941] Sent heartbeat.
+[DEBUG 1728459766.40954] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459766.40954] Heartbeat received
+[INFO 1728459807.533375] Sent heartbeat.
+[DEBUG 1728459807.664559] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459807.664559] Heartbeat received
+[INFO 1728459848.784053] Sent heartbeat.
+[DEBUG 1728459848.9037683] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459848.9037683] Heartbeat received
+[INFO 1728459890.0348415] Sent heartbeat.
+[DEBUG 1728459890.1566463] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459890.1566463] Heartbeat received
+[INFO 1728459931.285432] Sent heartbeat.
+[DEBUG 1728459931.4060042] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459931.4060042] Heartbeat received
+[INFO 1728459972.5359786] Sent heartbeat.
+[DEBUG 1728459972.6567924] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728459972.6567924] Heartbeat received
+[INFO 1728460013.7868557] Sent heartbeat.
+[DEBUG 1728460013.906482] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460013.906482] Heartbeat received
+[INFO 1728460055.038187] Sent heartbeat.
+[DEBUG 1728460055.1629207] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460055.1629207] Heartbeat received
+[INFO 1728460096.2889414] Sent heartbeat.
+[DEBUG 1728460096.4132836] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460096.4142835] Heartbeat received
+[INFO 1728460137.539623] Sent heartbeat.
+[DEBUG 1728460137.6640065] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460137.6640065] Heartbeat received
+[INFO 1728460178.7902603] Sent heartbeat.
+[DEBUG 1728460178.9129913] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460178.9129913] Heartbeat received
+[INFO 1728460220.04107] Sent heartbeat.
+[DEBUG 1728460220.1637125] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460220.1637125] Heartbeat received
+[INFO 1728460261.291509] Sent heartbeat.
+[DEBUG 1728460261.4157283] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460261.4157283] Heartbeat received
+[INFO 1728460302.542454] Sent heartbeat.
+[DEBUG 1728460302.6639767] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460302.6649764] Heartbeat received
+[INFO 1728460343.7929752] Sent heartbeat.
+[DEBUG 1728460343.9139647] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460343.9139647] Heartbeat received
+[INFO 1728460385.043659] Sent heartbeat.
+[DEBUG 1728460385.173448] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460385.173448] Heartbeat received
+[INFO 1728460426.2941778] Sent heartbeat.
+[DEBUG 1728460426.423396] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460426.423396] Heartbeat received
+[INFO 1728460467.5453565] Sent heartbeat.
+[DEBUG 1728460467.6750672] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460467.6750672] Heartbeat received
+[INFO 1728460508.7961633] Sent heartbeat.
+[DEBUG 1728460508.922201] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460508.9232006] Heartbeat received
+[INFO 1728460550.0469384] Sent heartbeat.
+[DEBUG 1728460550.1756697] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460550.1766703] Heartbeat received
+[INFO 1728460591.2978706] Sent heartbeat.
+[DEBUG 1728460591.4270546] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460591.4280548] Heartbeat received
+[INFO 1728460632.5483744] Sent heartbeat.
+[DEBUG 1728460632.6734016] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460632.6734016] Heartbeat received
+[INFO 1728460673.7991993] Sent heartbeat.
+[DEBUG 1728460673.9354205] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460673.9354205] Heartbeat received
+[INFO 1728460715.04974] Sent heartbeat.
+[DEBUG 1728460715.177071] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460715.178072] Heartbeat received
+[INFO 1728460756.3009322] Sent heartbeat.
+[DEBUG 1728460756.4242778] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460756.4242778] Heartbeat received
+[INFO 1728460797.5518725] Sent heartbeat.
+[DEBUG 1728460797.6759307] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460797.6769319] Heartbeat received
+[INFO 1728460838.802621] Sent heartbeat.
+[DEBUG 1728460838.9263456] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460838.9263456] Heartbeat received
+[INFO 1728460880.0535378] Sent heartbeat.
+[DEBUG 1728460880.177843] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460880.177843] Heartbeat received
+[INFO 1728460921.3040478] Sent heartbeat.
+[DEBUG 1728460921.4292881] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460921.4302888] Heartbeat received
+[INFO 1728460962.5545826] Sent heartbeat.
+[DEBUG 1728460962.6966648] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728460962.697665] Heartbeat received
+[INFO 1728461003.8056197] Sent heartbeat.
+[DEBUG 1728461003.92904] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461003.92904] Heartbeat received
+[INFO 1728461045.0561776] Sent heartbeat.
+[DEBUG 1728461045.1799145] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461045.1809144] Heartbeat received
+[DEBUG 1728461083.8776677] {'t': 'INTERACTION_CREATE', 's': 3, 'op': 0, 'd': {'version': 1, 'type': 2, 'token': 'aW50ZXJhY3Rpb246MTI5MzQ4NDI4NTc3MjE3MzQxMzp3bUZpazBpVzhZRnFndEdFSVpTVWVXZDdueWIzbGdUOVlEbnlDV2hMWGhNaHBmSmtIc2ZyMktqN1cweXNTeHNCUk9vNXpkVUhpZHN1TUJHbHVGdFlPRGM4cHh0RW9RUVdLUkV2Zm0wU3hiamNGZGVYMlJPTUNwSlhCeWVhTkc5aQ', 'member': {'user': {'username': 'empezeeet', 'public_flags': 128, 'id': '484252135131971584', 'global_name': 'Empezeeet', 'discriminator': '0', 'clan': None, 'avatar_decoration_data': None, 'avatar': 'ee27700f84a693e390d2e56ab42dc0cc'}, 'unusual_dm_activity_until': None, 'roles': ['1209184363854696488', '1292716069823184947', '1051568158739267644', '1292717726229331988'], 'premium_since': None, 'permissions': '2251799813685247', 'pending': False, 'nick': 'SOS BAZYLIOWY', 'mute': False, 'joined_at': '2022-08-25T20:29:24.228000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'locale': 'pl', 'id': '1293484285772173413', 'guild_locale': 'pl', 'guild_id': '1012458697995337748', 'guild': {'locale': 'pl', 'id': '1012458697995337748', 'features': ['ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY', 'THREE_DAY_THREAD_ARCHIVE', 'INVITE_SPLASH', 'ANIMATED_ICON', 'CHANNEL_ICON_EMOJIS_GENERATED', 'AUTO_MODERATION', 'SOUNDBOARD', 'GUESTS_ENABLED']}, 'entitlements': [], 'entitlement_sku_ids': [], 'data': {'type': 1, 'name': 'graj', 'id': '1286804027576946759'}, 'context': 0, 'channel_id': '1013135569666179172', 'channel': {'type': 0, 'topic': None, 'theme_color': None, 'rate_limit_per_user': 0, 'position': 0, 'permissions': '2251799813685247', 'parent_id': '1293339542962831371', 'nsfw': False, 'name': 'ogólny', 'last_pin_timestamp': '2024-08-27T18:02:19+00:00', 'last_message_id': '1293474271812648990', 'id': '1013135569666179172', 'icon_emoji': {'name': '🌐', 'id': None}, 'guild_id': '1012458697995337748', 'flags': 0, 'default_thread_rate_limit_per_user': 0}, 'authorizing_integration_owners': {'0': '1012458697995337748'}, 'application_id': '1286134427851817032', 'app_permissions': '2222085203414592'}}
+[INFO 1728461083.8776677] Received INTERACTION_CREATE event.
+[INFO 1728461083.8776677] Executing command graj
+[DEBUG 1728461084.856928] {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'webhook_id': '1286134427851817032', 'type': 0, 'tts': False, 'timestamp': '2024-10-09T08:04:46.389000+00:00', 'position': 0, 'pinned': False, 'nonce': '1293484277878489088', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['1286135979392106561', '1051568158739267644'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2024-09-19T01:25:12.855000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'interaction_metadata': {'user': {'username': 'empezeeet', 'public_flags': 128, 'id': '484252135131971584', 'global_name': 'Empezeeet', 'discriminator': '0', 'clan': None, 'avatar_decoration_data': None, 'avatar': 'ee27700f84a693e390d2e56ab42dc0cc'}, 'type': 2, 'name': 'graj', 'id': '1293484285772173413', 'command_type': 1, 'authorizing_integration_owners': {'0': '1012458697995337748'}}, 'interaction': {'user': {'username': 'empezeeet', 'public_flags': 128, 'id': '484252135131971584', 'global_name': 'Empezeeet', 'discriminator': '0', 'clan': None, 'avatar_decoration_data': None, 'avatar': 'ee27700f84a693e390d2e56ab42dc0cc'}, 'type': 2, 'name': 'graj', 'member': {'roles': ['1209184363854696488', '1292716069823184947', '1051568158739267644', '1292717726229331988'], 'premium_since': None, 'pending': False, 'nick': 'SOS BAZYLIOWY', 'mute': False, 'joined_at': '2022-08-25T20:29:24.228000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'id': '1293484285772173413'}, 'id': '1293484289484390473', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'Kto to powiedział?\n"***dziwię się że nikt tego nie dał na cytaty***"\nOdpowiedź: ||*** ten oto użytkownik: amerykanczykk***||', 'components': [], 'channel_id': '1013135569666179172', 'author': {'username': 'CytatyBot', 'public_flags': 0, 'id': '1286134427851817032', 'global_name': None, 'discriminator': '4158', 'clan': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': '25bf4421fe170ac34d31976f21d97d27'}, 'attachments': [], 'application_id': '1286134427851817032', 'guild_id': '1012458697995337748'}}
+[INFO 1728461086.3070123] Sent heartbeat.
+[DEBUG 1728461086.4295971] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461086.4305983] Heartbeat received
+[INFO 1728461127.557592] Sent heartbeat.
+[DEBUG 1728461127.68158] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461127.68158] Heartbeat received
+[INFO 1728461168.8082902] Sent heartbeat.
+[DEBUG 1728461168.9366033] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461168.9376132] Heartbeat received
+[INFO 1728461210.0591128] Sent heartbeat.
+[DEBUG 1728461210.182421] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461210.183423] Heartbeat received
+[INFO 1728461251.3097055] Sent heartbeat.
+[DEBUG 1728461251.4338844] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461251.4338844] Heartbeat received
+[INFO 1728461292.560441] Sent heartbeat.
+[DEBUG 1728461292.6846738] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461292.6846738] Heartbeat received
+[INFO 1728461333.810912] Sent heartbeat.
+[DEBUG 1728461333.934583] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461333.934583] Heartbeat received
+[INFO 1728461375.0615644] Sent heartbeat.
+[DEBUG 1728461375.1849065] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461375.1849065] Heartbeat received
+[INFO 1728461416.312068] Sent heartbeat.
+[DEBUG 1728461416.4357593] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461416.4357593] Heartbeat received
+[INFO 1728461457.5629654] Sent heartbeat.
+[DEBUG 1728461457.6937418] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461457.6937418] Heartbeat received
+[INFO 1728461498.8138723] Sent heartbeat.
+[DEBUG 1728461498.9369535] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461498.9369535] Heartbeat received
+[INFO 1728461540.0645385] Sent heartbeat.
+[DEBUG 1728461540.188174] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461540.188174] Heartbeat received
+[INFO 1728461581.3149836] Sent heartbeat.
+[DEBUG 1728461581.447171] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461581.447171] Heartbeat received
+[INFO 1728461622.5655458] Sent heartbeat.
+[DEBUG 1728461622.6896424] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461622.6896424] Heartbeat received
+[INFO 1728461663.816621] Sent heartbeat.
+[DEBUG 1728461663.946426] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461663.946426] Heartbeat received
+[INFO 1728461705.0673792] Sent heartbeat.
+[DEBUG 1728461705.1911805] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461705.1911805] Heartbeat received
+[INFO 1728461746.3185637] Sent heartbeat.
+[DEBUG 1728461746.4432313] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461746.444735] Heartbeat received
+[INFO 1728461787.569532] Sent heartbeat.
+[DEBUG 1728461787.694201] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461787.694201] Heartbeat received
+[INFO 1728461828.820299] Sent heartbeat.
+[DEBUG 1728461828.9519286] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461828.9519286] Heartbeat received
+[INFO 1728461870.0712373] Sent heartbeat.
+[DEBUG 1728461870.1962574] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461870.1962574] Heartbeat received
+[INFO 1728461911.3217406] Sent heartbeat.
+[DEBUG 1728461911.4496047] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461911.4496047] Heartbeat received
+[INFO 1728461952.5726678] Sent heartbeat.
+[DEBUG 1728461952.7006419] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461952.7006419] Heartbeat received
+[INFO 1728461993.8234355] Sent heartbeat.
+[DEBUG 1728461993.9477627] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728461993.9477627] Heartbeat received
+[INFO 1728462035.074183] Sent heartbeat.
+[DEBUG 1728462035.1971848] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462035.1981928] Heartbeat received
+[INFO 1728462076.3246822] Sent heartbeat.
+[DEBUG 1728462076.4538865] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462076.4538865] Heartbeat received
+[INFO 1728462117.5755765] Sent heartbeat.
+[DEBUG 1728462117.6987078] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462117.6987078] Heartbeat received
+[INFO 1728462158.8265202] Sent heartbeat.
+[DEBUG 1728462158.9538755] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462158.954877] Heartbeat received
+[INFO 1728462200.077257] Sent heartbeat.
+[DEBUG 1728462200.2082748] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462200.2082748] Heartbeat received
+[INFO 1728462241.327944] Sent heartbeat.
+[DEBUG 1728462241.4607325] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462241.4607325] Heartbeat received
+[INFO 1728462282.5788898] Sent heartbeat.
+[DEBUG 1728462282.7079308] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462282.7079308] Heartbeat received
+[INFO 1728462323.8295867] Sent heartbeat.
+[DEBUG 1728462323.9543529] {'t': None, 's': None, 'op': 11, 'd': None}
+[INFO 1728462323.9543529] Heartbeat received
